@@ -1,0 +1,19 @@
+# InventIQ backend dependencies.
+# Only the packages required for the current FastAPI foundation.
+fastapi==0.141.1
+uvicorn==0.53.0
+pydantic==2.13.5
+email-validator==2.3.0
+python-multipart==0.0.32
+SQLAlchemy==2.0.43
+pymysql==1.2.3
+python-dotenv==1.2.3
+pandas==2.3.3
+numpy==2.3.3
+scikit-learn==1.7.2
+xgboost==3.0.2
+statsmodels==0.14.5
+joblib==1.5.2
+PyJWT==2.10.1
+passlib==1.7.4
+bcrypt==5.0.0

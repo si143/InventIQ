@@ -1,0 +1,44 @@
+# Frontend dependencies and generated output
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Python environments, caches, and build output
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/venv/
+**/env/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.egg-info/
+**/build/
+
+# Local environment files and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local database, uploaded data, and generated model artifacts
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/uploads/
+backend/model_artifacts/
+
+# Archived in-project recovery copy; keep the separate external backup
+backup_before_simplification/
+
+# Editor and operating-system files
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/Thumbs.db
+**/*.swp
+**/*.swo
+
+# Logs and coverage output
+**/*.log
+**/.coverage
+**/htmlcov/

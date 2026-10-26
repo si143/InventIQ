@@ -1,0 +1,59 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#F7F7FA] text-[#171522] dark:bg-[#171525] dark:text-[#F8FAFC] antialiased transition-colors duration-200;
+  margin: 0;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 dark:bg-slate-700/60 rounded-full hover:bg-slate-300 dark:hover:bg-slate-600;
+}
+
+/* Design System Utility Classes */
+.btn-gradient {
+  background: linear-gradient(135deg, #D946A8 0%, #7C5CFC 100%);
+  color: #ffffff;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #c23693 0%, #6846f1 100%);
+  box-shadow: 0 4px 14px rgba(217, 70, 168, 0.35);
+  transform: translateY(-1px);
+}
+
+.ai-card-gradient {
+  background: linear-gradient(135deg, rgba(217, 70, 168, 0.06) 0%, rgba(124, 92, 252, 0.06) 100%);
+  border: 1px solid rgba(217, 70, 168, 0.18);
+}
+
+.dark .ai-card-gradient {
+  background: linear-gradient(135deg, rgba(217, 70, 168, 0.12) 0%, rgba(124, 92, 252, 0.12) 100%);
+  border: 1px solid rgba(217, 70, 168, 0.3);
+}
+
+.glass-card {
+  @apply bg-white/80 dark:bg-[#211E35]/80 backdrop-blur-md border border-slate-200/80 dark:border-white/10;
+}

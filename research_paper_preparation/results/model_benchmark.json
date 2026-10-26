@@ -1,0 +1,41 @@
+{
+  "dataset": "backend\\uploads\\3_b949f03a826b4895a4f01d7cb8d3731a_inventiq_demand_inventory_dataset.csv",
+  "product_id": "P2000",
+  "date_column": "date",
+  "target_column": "units_sold",
+  "train_end": "2025-10-19",
+  "validation_start": "2025-10-20",
+  "validation_end": "2025-12-31",
+  "selected_model": "XGBoost",
+  "best_metrics": {
+    "mae": 3.7323877315662086,
+    "rmse": 5.111421423925138,
+    "r2_score": 0.5128061187677506
+  },
+  "results": [
+    {
+      "model": "Linear Regression",
+      "mae": 14.633578138561118,
+      "rmse": 54.402828655687884,
+      "r2_score": -54.19012909936481
+    },
+    {
+      "model": "Random Forest",
+      "mae": 3.8224523661270235,
+      "rmse": 5.172100388720166,
+      "r2_score": 0.5011702588563979
+    },
+    {
+      "model": "XGBoost",
+      "mae": 3.7323877315662086,
+      "rmse": 5.111421423925138,
+      "r2_score": 0.5128061187677506
+    },
+    {
+      "model": "ARIMA",
+      "mae": 32.62583954179608,
+      "rmse": 35.04315320509631,
+      "r2_score": null
+    }
+  ]
+}
